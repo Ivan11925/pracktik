@@ -1,0 +1,45 @@
+button {
+  cursor: pointer;
+}
+
+[data-modal-open] {
+  color: rgb(68, 8, 8);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(108, 49, 0);
+  opacity: 1;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: 0;
+  visibility: hidden;
+}
+
+/* .no-scroll {
+  overflow: hidden;
+} */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 300px;
+  min-height: 200px;
+  padding: 15px;
+  background-color: rgb(255, 115, 0);
+  transform: translate(-50%, -50%);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.id {
+  color: rgb(0, 86, 245);
+}

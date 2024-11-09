@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal-window</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Початок звичайної розмітки сайту -->
+    <button class="btn-open" type="button" title="open-modal" data-modal-open>
+      history
+    </button>
+    <!-- Кінець звічайної розімітки сайту -->
+    <!-- Початок модального вікна -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn" type="button" title="close modal" data-modal-close>
+          Close
+        </button>
+        <p></p>
+      </div>
+    </div>
+
+    <!-- Кінець модального вікна -->
+    <!-- Початок місля для js скріптів -->
+    <script src="./mode.js"></script>
+    <!-- Кінець місля для js скріптів -->
+  </body>
+</html>
